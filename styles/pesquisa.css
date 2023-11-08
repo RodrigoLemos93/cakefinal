@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+
+:root {
+    --cor-principal: #FFC6AC;
+    --cor-secundaria: #ADC4CE;
+    --cor-terciaria: #F1F0E8;
+}
+
+.pesquisar__desk {
+    display: none;
+}
+
+
+.pesquisar__input {
+    background-color: transparent;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 1.5rem;
+    padding: 1em;
+    width: 90%;
+    margin: 1rem;
+}
+
+.pesquisar__input::placeholder, .pesquisar__input-desk::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    background: url("../assets/icones/pesquisa__icone.svg") no-repeat;
+    background-position: 1rem;
+}
+
+.pesquisar__input:focus {
+    outline: none;
+    border: 2px solid var(--cor-secundaria) ;
+    box-shadow: 2px 2px 5px var(--cor-principal);
+}
+
+@media screen and (min-width: 900px) {
+    .pesquisar__desk {
+        display: block;
+        width: 50vw;
+        margin: 0 3rem;
+    }
+
+    .pesquisar__input-desk {
+        background-color: var(--cor-terciaria);
+        border: 2px solid var(--cor-secundaria);
+        border-radius: 1.5rem;
+        padding: 1rem;
+        width: 90%;
+        margin: 1rem;
+    }
+
+    .pesquisar__input-desk:focus {
+        outline: none;
+        box-shadow: 2px 2px 5px black;
+    }
+  
+
+    .pesquisar {
+        display: none;
+    }
+}

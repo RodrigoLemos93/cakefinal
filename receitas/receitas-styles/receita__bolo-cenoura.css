@@ -1,0 +1,142 @@
+:root {
+    --cor-principal: #FFC6AC;
+    --cor-secundaria: #ADC4CE;
+    --cor-terciaria: #F1F0E8;
+}
+
+.receita__titulo-voltar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--cor-secundaria);
+    box-shadow: 0 5px 5px -5px var(--cor-secundaria);
+    padding-bottom: 1rem;
+}
+
+.receita__botao-voltar {
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 2rem;
+}
+
+.receita__botao-voltar:active, .receita__botao-voltar:hover {
+    background: var(--cor-secundaria);
+    border: 2px solid var(--cor-principal);
+    box-shadow: 2px 2px 2px grey;
+}
+
+.receita__img-voltar {
+    width: 2rem;
+}
+
+.receita__principal {
+    margin: 1rem;
+}
+
+.receitas__receita-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 35%;
+}
+
+.receita__img-nome {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 2px solid var(--cor-secundaria);
+    box-shadow: 0 5px 5px -5px var(--cor-secundaria);
+    padding: 0 1rem;
+}
+
+.receita__receita-img {
+    border-right: 2px solid var(--cor-secundaria);
+    box-shadow: 5px 0 5px -5px var(--cor-secundaria);
+    margin: 1.5rem 0;
+    padding-right: 0.5rem;
+    width: 15rem;
+}
+
+.receita__receita-nome {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0.5rem;
+}
+
+.receita__ingredientes-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.receita__ingredientes {
+    padding: 1rem;
+    border-bottom: 2px solid var(--cor-secundaria);
+    box-shadow: 0 5px 5px -5px var(--cor-secundaria);
+}
+
+.ingredientes__titulo {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    margin-left: 1.5rem;
+}
+
+.ingredientes__item {
+    margin-left: 3rem;
+    padding: 0.1rem 0;
+    line-height: 1.1rem;
+    list-style-type: disc;
+}
+
+.receita__preparo {
+    padding: 1rem;
+}
+
+.preparo__item {
+    list-style-type: circle;
+}
+
+@media screen and (min-width: 900px) {
+
+    .cabecalho__foto-nome {
+        position: absolute;
+        right: 0;
+    }
+
+    .receitas__receita-titulo {
+        margin: 0 45%;
+    }
+
+    .receita__img-nome {
+        flex-direction: column-reverse;
+        margin: 2rem;
+        justify-content: start;
+        border: none;
+        box-shadow: none;
+    }
+
+    .receita__receita-img {
+        border: none;
+        box-shadow: none;
+    }
+
+    .receita__ingredientes {
+        border-bottom: none;
+        box-shadow: none;
+        border-left: 1px solid var(--cor-secundaria);
+        box-shadow: -4px 0 4px -4px var(--cor-secundaria);
+        margin: 1rem 0;
+    }
+
+    .receita__desk {
+        display: flex;
+        border-bottom: 1px solid var(--cor-secundaria);
+        box-shadow: 0 5px 5px -5px var(--cor-secundaria);
+    }
+
+    .ingredientes__titulo {
+        border-bottom: 1px solid var(--cor-secundaria);
+        box-shadow: 0 5px 5px -5px var(--cor-secundaria);
+        width: 15vw;
+    }
+
+}

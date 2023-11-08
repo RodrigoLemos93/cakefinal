@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+
+:root {
+    --cor-principal: #FFC6AC;
+    --cor-secundaria: #ADC4CE;
+    --cor-terciaria: #F1F0E8;
+}
+
+body {
+    background: var(--cor-terciaria);
+    font-family: 'Raleway', sans-serif;
+}
+
+.cabecalho {
+    background: var(--cor-principal);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--cor-secundaria);
+    box-shadow: 0 1px 4px var(--cor-secundaria);
+}
+
+.cabecalho__foto-nome-logo {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__foto-nome {
+    align-items: center;
+    display: flex;
+}
+
+.cabecalho__foto-perfil {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+}
+
+.cabecalho__nome-perfil {
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.cabecalho__logo {
+    position: absolute;
+    height: 4rem;
+    right: 3.5rem;
+}
+
+@media screen and (min-width: 900px) {
+
+    .cabecalho__foto-nome-logo {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .cabecalho__logo {
+        position: relative;
+        margin-left: 10rem;
+    }
+
+}

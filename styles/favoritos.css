@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+
+:root {
+    --cor-principal: #FFC6AC;
+    --cor-secundaria: #ADC4CE;
+    --cor-terciaria: #F1F0E8;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.produtos {
+    margin: 1rem;
+}
+
+.produtos__lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos__card {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.produtos__nome {
+    padding-bottom: 0.5rem;
+    
+}
+
+.produtos__valor {
+    padding-top: 0.5rem;
+}
+
+.produtos__valor-plus {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.rodape__home-fav {
+    padding-right: 4rem;
+    border-right: 1px solid var(--cor-secundaria);
+}
+
+.rodape__perfil-fav {
+    padding-left: 4rem;
+    border-left: 1px solid var(--cor-secundaria);
+}
+
+.adicionar {
+    margin-left: 1rem;
+}
+
+.produtos__imagem {
+    width: 7rem;
+}
+
+@media screen and (min-width: 900px) {
+
+    .produtos__lista {
+        display: none;
+    }
+
+    .produtos__card-desk {
+        width: 40vw;
+        display: flex;
+        flex-direction: row;
+    }
+   
+
+}

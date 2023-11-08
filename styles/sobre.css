@@ -1,0 +1,209 @@
+:root {
+    --cor-principal: #FFC6AC;
+    --cor-secundaria: #ADC4CE;
+    --cor-terciaria: #F1F0E8;
+}
+
+.sobre__principal {
+    margin: 1rem;
+}
+
+.sobre__titulo {
+    border-bottom: 2px solid var(--cor-principal);
+    box-shadow: 0 5px 5px -5px var(--cor-principal);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sobre__banner {
+    border-radius: 0.5rem;
+    height: 18vh;
+    margin-top: 0.1rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.sobre__div-imghist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0.5rem;
+}
+
+.sobre__texto1, .sobre__texto2, .sobre__local-endereco {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px var(--cor-secundaria);
+}
+
+.sobre__texto1 {
+    border-right: 2px solid var(--cor-secundaria);
+    box-shadow: 5px 0 5px -5px var(--cor-secundaria);
+    margin-right: 1rem;
+    padding-right: 0.5rem;
+}
+
+.sobre__texto2 {
+    border-left: 2px solid var(--cor-secundaria);
+    box-shadow: -5px 0 -5px -5px var(--cor-secundaria);
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+}
+
+.sobre__hist-imagem1, .sobre__hist-imagem2 {
+    border-radius: 1rem;
+    height: 15rem;
+    object-fit: cover;
+    object-position: -2rem 0; 
+    width: 20%;
+}
+
+.sobre__redes {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+.sobre__redes-titulo, .sobre__local-titulo {
+    border-bottom: 2px solid var(--cor-secundaria);
+    box-shadow: 0 5px 5px -5px var(--cor-secundaria);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sobre__redes-botoes {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sobre__redes-botao {
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 3rem;
+    box-shadow: 2px 2px 5px var(--cor-secundaria);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.sobre__redes-insta, .sobre__redes-face {
+    width: 3rem;
+}
+
+.sobre__redes-botao:active, .sobre__redes-botao:hover {
+        background: var(--cor-secundaria);
+        border: 2px solid var(--cor-principal);
+        box-shadow: 1px 1px 2px var(--cor-secundaria);
+}
+
+.sobre__redes-nomes {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre__insta-titulo, .sobre__face-titulo {
+    border-bottom: 2px solid var(--cor-secundaria);
+    box-shadow: 0 5px 5px -5px var(--cor-secundaria);
+    margin: 0.2rem 0;
+    padding: 0.1rem 0;
+}
+
+.sobre__insta-titulo {
+    margin-right: 5rem;
+}
+
+.sobre__face-titulo {
+    margin-left: 5rem;
+}
+
+.sobre__local {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre__foto-local {
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+.sobre__local-endereco {
+    border-right: 2px solid var(--cor-secundaria);
+    box-shadow: 5px 0 5px -5px var(--cor-secundaria);
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+.sobre__img-estabelecimento {
+    border-radius: 2rem;
+    width: 15rem;
+}
+
+.sobre__local-mapa {
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 900px) {
+
+    .pesquisar__desk {
+        display: none;
+    }
+
+    .cabecalho__foto-nome {
+        position: absolute;
+        right: 0;
+    }
+
+    .sobre__banner {
+        display: none;
+    }
+
+    .sobre__titulo {
+        align-items: center;
+        border-bottom: 2px solid var(--cor-secundaria);
+        box-shadow: 0 5px 5px -5px var(--cor-secundaria);
+        text-align: center;
+        width: 95vw;
+    }
+
+    .sobre__principal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sobre__historia {
+        width: 40vw;
+        margin: 1rem 2rem;
+    }
+
+    .sobre__hist-redeslocal-desk {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+
+    .sobre__redes-local-desk {
+        border-left: 1px solid var(--cor-secundaria);
+        box-shadow: -5px 0 5px -5px var(--cor-secundaria);
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 2rem;
+        width: 40vw;
+    }
+
+}
+

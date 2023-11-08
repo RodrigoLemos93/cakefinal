@@ -1,0 +1,30 @@
+:root {
+    --cor-principal: #FFC6AC;
+    --cor-secundaria: #ADC4CE;
+    --cor-terciaria: #F1F0E8;
+}
+
+.total__compras {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 3rem;
+    width: 100%;
+    background: var(--cor-secundaria);
+    margin: 0.5rem 0;
+    font-weight: bold;
+    box-shadow: 0 6px 6px -5px var(--cor-secundaria);
+}
+
+.total__compras-iconeTexto {
+    display: flex;
+}
+
+.total__icone {
+    padding: 0 1rem;
+}
+
+.total__valor {
+    padding: 0 1rem;
+    box-shadow: -4px 0 4px -4px black;
+}

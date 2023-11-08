@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakesabores | Bolo Arco-Íris</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/cabecalho.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/produtos.css">
+    <link rel="stylesheet" href="../styles/rodape.css">
+    <link rel="stylesheet" href="../styles/produto-geral.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__foto-nome">
+            <img src="../assets/perfil__foto.jpg" alt="Foto de perfil" class="cabecalho__foto-perfil">
+            <h2 class="cabecalho__nome-perfil">Olá, Parkinho</h2>
+            <img src="../assets/cake-logo.png" alt="Logo Cakesabores" class="cabecalho__logo">
+        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li class="menu__item-gp">
+                <img src="../assets/icones/receitas__icone.svg" alt="Receitas" class="menu__icone">
+                <a class="menu__item" href="../receitas/receitas.html">Receitas</a></li>
+              <li class="menu__item-gp">
+                <img src="../assets/icones/parceiros__icone.svg" alt="Parceiros" class="menu__icone">
+                <a class="menu__item" href="../parceiros.html">Parceiros</a></li>
+              <li class="menu__item-gp">
+                <img src="../assets/icones/sobrenos__icone.svg" alt="Sobre nós" class="menu__icone">
+                <a class="menu__item" href="../sobrenos.html">Sobre nós</a></li>
+              <li class="menu__item-gp">
+                <img src="../assets/icones/contato__icone.svg" alt="Contato" class="menu__icone">
+                <a class="menu__item" href="../contato.html">Contato</a></li>
+            </ul>
+          </div>
+    </header>
+
+    <main class="produto-geral">
+        <section class="produto__img-nomes">
+            <img src="../assets/bolo__4.png" alt="Bolo Arco-Íris" class="produto__img">
+            <div class="produto__nome-valor-peso">
+                <h3 class="produto__nome">Arco-Íris</h3>
+                <h3 class="produto__valor">R$ 64,90</h3>
+                <h3 class="produto__peso">1,5 kg</h3>
+            </div>
+        </section>
+
+        <nav class="produto__descricao-botoes">
+            <h2 class="produto__descricao">Delicioso bolo de três camadas, com recheio de chocolate e amêndoas e massa super colorida! </h2>
+            <section class="produtos__add-fav">
+               <div class="adicionar">
+                   <input id="add1" type="checkbox">
+                  <label for="add1" class="checkbox-label"></label>
+              </div>
+             <div class="favoritar">
+                 <input id="fav" type="checkbox">
+                 <label for="fav" class="checkbox-label2"></label>
+             </div>
+            </section>
+        </nav>
+    </main>
+
+
+    <footer class="rodape">
+        <div class="rodape__botao">
+            <a href="../principal.html" class="rodape__ancora">
+                <img src="../assets/icones/inicio__icone.svg" alt="Início" class="rodape__icone">
+                <h4 class="rodape__texto">Início</h4>
+            </a>
+        </div>
+        <div class="rodape__botao">
+            <a href="../favoritos.html" class="rodape__ancora rodape__favoritos">
+                <img src="../assets/icones/favoritos__icone.svg" alt="Favoritos" class="rodape__icone">
+                <h4 class="rodape__texto">Favoritos</h4>
+            </a>
+        </div>
+        <div class="rodape__botao">
+            <a href="../perfil.html" class="rodape__ancora">
+                <img src="../assets/icones/perfil__icone.svg" alt="Perfil" class="rodape__icone">
+                <h4 class="rodape__texto">Perfil</h4>
+            </a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
